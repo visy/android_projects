@@ -1,0 +1,217 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/starbg"
+    tools:context="${packageName}.${activityClass}"
+    android:soundEffectsEnabled="true"
+     >
+
+	<RelativeLayout
+	    android:id="@+id/wheelGroup"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+	    
+	    >
+
+		<ImageView
+		    android:id="@+id/arrowHandView"
+		    android:layout_width="320dp"
+		    android:layout_height="340dp"
+		    android:adjustViewBounds="true"
+		    android:rotation="270"
+		    android:src="@drawable/arrowhand" />
+    
+	        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="right|top" >
+
+    </LinearLayout>
+	    
+        <ImageView
+            android:id="@+id/wheelView"
+            android:layout_width="1024dp"
+            android:layout_height="1024dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/darewheel" />
+
+        <RelativeLayout
+		    android:id="@+id/wheelVerbGroup"
+		    android:layout_width="1024dp"
+		    android:layout_height="1024dp">
+
+	    </RelativeLayout>
+        	    
+     </RelativeLayout>
+
+	<RelativeLayout
+	    android:id="@+id/ticketGroup"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:alpha="0.9"
+	    android:clickable="true"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true"
+	    android:visibility="gone" 
+	        android:soundEffectsEnabled="true"
+	    
+	    >
+
+	    <TextView
+	        android:id="@+id/ticketTextView"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/ticket"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:maxLines="4"
+	        android:paddingLeft="35dp"
+	        android:paddingRight="35dp"
+	        android:singleLine="false"
+	        android:text="This is a test text. Please ignore this! fasdosdaf hsadfioahds oifhsdia sdi fhdfsd fahi dsh sdifah "
+	        android:textColor="#000000"
+	        android:textSize="35sp" />
+
+	    <TextView
+	        android:id="@+id/ticketCaptionView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="26dp"
+	        android:gravity="center_horizontal"
+	        android:text="CAPTION TEXT"
+	        android:textColor="#000000"
+	        android:textSize="50sp"
+	        android:textStyle="bold" />
+
+	</RelativeLayout>
+
+	<RelativeLayout
+	    android:id="@+id/truthOrDareGroup"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:alpha="0.9"
+	    android:visibility="invisible" >
+
+	    <ImageView
+	        android:id="@+id/todBG"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:src="@drawable/ticket" />
+
+	    <TextView
+	        android:id="@+id/todCaption"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="26dp"
+	        android:gravity="center_horizontal"
+	        android:text="PICK!"
+	        android:textColor="#000000"
+	        android:textSize="50sp"
+	        android:textStyle="bold" />
+
+	    <RelativeLayout
+	        android:id="@+id/todButtonGroup"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:gravity="center_horizontal" >
+
+	        <TextView
+	            android:id="@+id/orText"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBaseline="@+id/truthButton"
+	            android:layout_alignBottom="@+id/truthButton"
+	            android:layout_marginLeft="46dp"
+	            android:layout_toRightOf="@+id/truthButton"
+	            android:text="OR"
+	            android:textColor="#000000"
+	            android:textSize="30sp" />
+
+	        <Button
+	            android:id="@+id/dareButton"
+	            android:layout_width="170dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="43dp"
+	            android:layout_toRightOf="@+id/orText"
+	            android:background="@drawable/darebuttonshape"
+	            android:text="DARE"
+	            android:textSize="40sp" 
+	                android:soundEffectsEnabled="true"
+	            
+	            />
+
+	        <Button
+	            android:id="@+id/truthButton"
+	            android:layout_width="170dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="13dp"
+	            android:background="@drawable/truthbuttonshape"
+	            android:text="TRUTH"
+	            android:textSize="40sp" 
+	                android:soundEffectsEnabled="true"
+	            
+	            />
+	    </RelativeLayout>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+	    android:id="@+id/infoGroup"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:alpha="0.9"
+	    android:clickable="true"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true"
+	    android:visibility="gone" 
+	        android:soundEffectsEnabled="true"
+	    
+	    >
+
+	    <TextView
+	        android:id="@+id/TextView02"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/ticket"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:maxLines="4"
+	        android:paddingLeft="35dp"
+	        android:paddingRight="35dp"
+	        android:singleLine="false"
+	        android:textColor="#000000"
+	        android:textSize="25sp" />
+
+	    <TextView
+	        android:id="@+id/infoText"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="26dp"
+	        android:gravity="center_horizontal"
+	        android:text="SPINNING!"
+	        android:textColor="#000000"
+	        android:textSize="30sp"
+	        android:textStyle="bold" />
+
+	</RelativeLayout>
+
+		    <ImageView
+	        android:id="@+id/phoneView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/phone"
+	        android:visibility="gone"
+	         />
+	
+</RelativeLayout>

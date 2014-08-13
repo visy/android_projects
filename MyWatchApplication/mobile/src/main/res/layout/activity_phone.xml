@@ -1,0 +1,137 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="#62cacaca"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <at.technikum.mti.fancycoverflow.FancyCoverFlow
+            android:id="@+id/coverFlow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            custom:maxRotation="45"
+            custom:unselectedAlpha="0.3"
+            custom:unselectedSaturation="0.0"
+            custom:unselectedScale="0.4"
+            android:background="#ffffff00"
+            android:layout_gravity="center_horizontal" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/separator"
+            android:visibility="visible"
+            android:background="@android:color/darker_gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <at.technikum.mti.fancycoverflow.FancyCoverFlow
+            android:id="@+id/coverFlow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            custom:maxRotation="45"
+            custom:unselectedAlpha="0.3"
+            custom:unselectedSaturation="0.0"
+            custom:unselectedScale="0.4"
+            android:background="#ffffff00"
+            android:layout_gravity="center_horizontal" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/separator2"
+            android:visibility="visible"
+            android:background="@android:color/darker_gray"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.larswerkman.holocolorpicker.ColorPicker
+            android:id="@+id/colorPicker"
+            android:layout_width="200dp"
+            android:layout_height="140dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <com.larswerkman.holocolorpicker.OpacityBar
+            android:id="@+id/opacitybar"
+            android:layout_width="160dp"
+            android:layout_height="112dp"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="8dip"/>
+
+        <com.larswerkman.holocolorpicker.SVBar
+            android:id="@+id/svbar"
+            android:layout_width="160dp"
+            android:layout_height="112dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_margin="8dip"/>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Watch hands"
+            android:id="@+id/textView"
+            android:layout_weight="0.55"
+            android:paddingLeft="8dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/handSelectionSpinner"
+            android:spinnerMode="dropdown"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="find wear"
+            android:id="@+id/findButton" />
+
+        <Button
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:text="Send to Wear"
+            android:id="@+id/previewButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.29" />
+
+    </LinearLayout>
+
+</LinearLayout>

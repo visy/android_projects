@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PrettyWear</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="hands_array">
+        <item>Short White</item>
+        <item>Short Black</item>
+        <item>Long White</item>
+        <item>Long Black</item>
+        <item>Short White w/ Red Second Hand</item>
+        <item>Short Black w/ Red Second Hand</item>
+        <item>Long White w/ Red Second Hand</item>
+        <item>Long Black w/ Red Second Hand</item>
+        <item>Short See-Through</item>
+        <item>Long See-Through</item>
+    </string-array>
+
+    <string-array name="dials_array">
+        <item>White Ticks</item>
+        <item>Black Ticks</item>
+        <item>White Small Ticks</item>
+        <item>Black Small Ticks</item>
+        <item>Black Arial</item>
+        <item>White Arial</item>
+        <item>Black Garamond</item>
+        <item>White Garamond</item>
+        <item>Compass White Ticks</item>
+        <item>Compass Black Ticks</item>
+        <item>Compass White Small Ticks</item>
+        <item>Compass Black Small Ticks</item>
+        <item>Compass Black Arial</item>
+        <item>Compass White Arial</item>
+        <item>Compass Black Garamond</item>
+        <item>Compass White Garamond</item>
+        <item>asd</item>
+        <item>asdd</item>
+        <item>assd</item>
+        <item>asgd</item>
+        <item>ahsd</item>
+        <item>ajsd</item>
+        <item>aksd</item>
+        <item>alsd</item>
+        <item>asgd</item>
+        <item>ahszd</item>
+        <item>ajsxd</item>
+        <item>akvsd</item>
+        <item>anlsd</item>
+        <item>ahszdn</item>
+        <item>ajsxmd</item>
+        <item>akvmsd</item>
+        <item>anblsd</item>
+        <item>axhszd</item>
+        <item>ajxsxd</item>
+        <item>akzvsd</item>
+        <item>anvlsd</item>
+        <item>ahsbzdn</item>
+        <item>ajsvxmd</item>
+        <item>akvxmsd</item>
+        <item>anbzlsd</item>
+    </string-array>
+</resources>
